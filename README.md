@@ -1,5 +1,5 @@
 # Django Developer Assignment 
-Vendor Management System with Performance Metrics 
+Hi :grinning: ! Here is my Vendor Management System with Performance Metrics created in Django 4.2.6 
 
 ### Objective 
 Develop a Vendor Management System using Django and Django REST Framework. This system will handle vendor profiles, track purchase orders, and calculate vendor performance metrics. 
@@ -72,3 +72,6 @@ Below URLs are the reference wrt to vendor profiles, track purchase orders, and 
 ![](https://github.com/praveenRI007/VendorManagementApp/blob/master/vendor-performance-evaluation.png)
 
 ![](https://github.com/praveenRI007/VendorManagementApp/blob/master/vendor-profile-list.png)
+
+
+### Thank you :grinning: !!!
