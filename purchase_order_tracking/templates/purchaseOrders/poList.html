@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vendors List</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Purchase Order Tracking List</h2>
+    <p>List of all Purchase Orders</p>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Vendor detail</th>
+            <th>PO code</th>
+            <th>status</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for po in PurchaseOrders %}
+        <tr>
+            <td><a href="{% url 'get-vendor-detail' po.vendor.vendor_code %}" style="text-decoration:none">{{ po.vendor.vendor_code }} - {{ po.vendor.name }}</a></td>
+            <td><a href="{% url 'get_po_detail' po.po_number %}" style="text-decoration:none">{{ po.po_number }}</a></td>
+            <td>{{ po.status }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <div class="mt-5">
+        <a class="btn btn-secondary btn-md ml-1 mb-1" href="{% url 'create_po' %}">Create Purchase Order</a>
+    </div>
+    <div class="mt-1">
+        <a class="btn btn-danger btn-md ml-1 mb-1" href="{% url 'home-page' %}">Home</a>
+    </div>
+</div>
+
+
+</body>
+</html>

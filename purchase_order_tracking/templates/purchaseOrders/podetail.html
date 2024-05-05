@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Puchase Order detail</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<table class="table mt-5 table-bordered">
+    <thead class="thead-dark">
+    <tr>
+        <th>Purchase Order Number :{{ po.po_number}}</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><b>vendor : </b></td>
+        <td> {{ po.vendor.vendor_code}}</td>
+    </tr>
+    <tr>
+        <td><b>order_date : </b></td>
+        <td> {{ po.order_date}}</td>
+    </tr>
+    <tr>
+        <td><b>delivery_date : </b></td>
+        <td> {{ po.delivery_date}}</td>
+    </tr>
+    <tr>
+        <td><b> items : </b></td>
+        <td> {{ po.items}}</td>
+    </tr>
+    <tr>
+        <td><b>quantity : </b></td>
+        <td> {{ po.quantity}}</td>
+    </tr>
+    <tr>
+        <td><b>status : </b></td>
+        <td> {{ po.status}}</td>
+    </tr>
+    <tr>
+        <td><b>quality_rating : </b></td>
+        <td> {{ po.quality_rating}}</td>
+    </tr>
+    <tr>
+        <td><b>issue_date : </b></td>
+        <td> {{ po.issue_date}}</td>
+    </tr>
+    <tr>
+        <td><b>acknowledgment_date : </b></td>
+        <td> {{ po.acknowledgment_date}}</td>
+    </tr>
+    </tbody>
+</table>
+
+<div class="ml-5">
+    <a class="btn btn-secondary btn-md ml-1 mb-1" href="{% url 'update_po' po.po_number %}">Update</a>
+    <a class="btn btn-danger btn-md ml-1 mb-1" href="{% url 'delete_po' po.po_number %}">Delete</a>
+    <a class="btn btn-primary btn-md ml-1 mb-1" href="{% url 'get_po_list' %}">back</a>
+</div>
+</body>
+</html>
