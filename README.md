@@ -1,4 +1,4 @@
-# Django Developer Assignment 
+# Django Application
 Hi :grinning: ! Here is my Vendor Management System with Performance Metrics created in Django 4.2.6 
 
 ### Objective 
