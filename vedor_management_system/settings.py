@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-f^txczw6@ixksnxrbp_=^+$&=h6*x*h4c=ei0#av3mt@ua+&sk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'vendormanagementapp.onrender.com'
+]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
