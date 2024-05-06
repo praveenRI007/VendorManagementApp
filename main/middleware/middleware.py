@@ -20,10 +20,10 @@ class CustomMiddleware(MiddlewareMixin):
             if token is None and request.path != '/login':
                 return redirect('login-page')
             else:
-                if token is None:
-                    return redirect('login-page')
-                payload = jwt.decode(token, SECRET_KEY_JWT, algorithms=[ALGORITHM])
-                print('token verified !')
+                if token is not None:
+                    payload = jwt.decode(token, SECRET_KEY_JWT, algorithms=[ALGORITHM])
+                    print('token verified !')
+
         except jwt.ExpiredSignatureError:
             print('token expired !')
             if request.path != '/login':
