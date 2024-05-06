@@ -1,6 +1,11 @@
 # Django Application
 Hi :grinning: ! Here is my Vendor Management System with Performance Metrics created in Django 4.2.6 
 
+click the below link to check out the app in action 😄 !   
+### Note: the app in deployed in render.com free service so please expect a delay on 2min or less for app to load up
+
+[vendormanagementapp.onrender.com](https://vendormanagementapp.onrender.com)
+
 ### Objective 
 Develop a Vendor Management System using Django and Django REST Framework. This system will handle vendor profiles, track purchase orders, and calculate vendor performance metrics. 
 
