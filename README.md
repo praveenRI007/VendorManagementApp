@@ -15,6 +15,9 @@ Below URLs are the reference wrt to vendor profiles, track purchase orders, and 
 - Has Token Authentication Support with token expiry of 5min and User will be directed to login Screen for fetching token.
 
 - Login System is statically typed and doesnt involve Database as this was POC app , the username and password to login are given below
+
+- Performance Metrics of Vendor is updated when Purchase order is created or updated and when purchase order is acknowledged using <b>Django Signals</b>
+
 >Username : Admin
 >Password : password
 
