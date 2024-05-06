@@ -1,16 +1,16 @@
-bcrypt                           4.0.1
-crashtest                        0.3.1
-crispy-bootstrap4                2024.1
-crispy-bootstrap5                0.7
-cryptography                     39.0.2
-Django                           4.2.6
-django-bootstrap3                23.6
-django-crispy-forms              2.1
-django-filter                    1.1.0
-django-static-jquery             2.1.4
-django-unicorn                   0.56.1
-django-widget-tweaks             1.5.0
-djangorestframework              3.14.0
-djangorestframework-filters      0.11.1
-djangorestframework-simplejwt    5.3.0
+bcrypt==4.0.1
+crashtest==0.3.1
+crispy-bootstrap4==2024.1
+crispy-bootstrap5==0.7
+cryptography==39.0.2
+Django==4.2.6
+django-bootstrap3==23.6
+django-crispy-forms==2.1
+django-filter==1.1.0
+django-static-jquery==2.1.4
+django-unicorn==0.56.1
+django-widget-tweaks==1.5.0
+djangorestframework==3.14.0
+djangorestframework-filters==0.11.1
+djangorestframework-simplejwt==5.3.0
 
